@@ -1,0 +1,269 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+     border-style: solid;
+     border-width: 8px;
+  border-color: #B1E4EB;
+}
+body {        /* navigation bar */
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+    width: 100%;
+}
+
+p.thicker { /*feature headers*/
+  font-weight: 900;
+  font-size: 2em;
+  font-family: simplicity;
+
+}
+.navbar{   /*navigation bar*/
+  list-style-type: none;
+  position: fixed;
+  margin: -25px;
+  padding: 10px;
+  font-size: 1.8em;
+   color: white;
+  word-spacing: 0px;
+  font-family: simplicity;
+
+}
+
+li {
+     list-style-type: none;
+  float: left;
+
+  
+}
+
+li a {
+     list-style-type: none;
+     text-decoration: none;
+  display: inline;
+  padding: 20px;
+}
+}
+
+
+
+h1{
+	color: rgba(64,64,64,1);
+	font-size: 5em;
+    font-family: Arial, Helvetica, sans-serif;
+
+    
+}
+
+.slogen{ /*Slogen*/
+    color: rgba(64,64,64,1);
+    font-size: 2em;
+    font-family: simplicity;
+    text-decoration: underline;
+}
+
+p { /*text*/
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+
+
+}
+
+#title{
+    margin:auto;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.logotext{
+    text-align:center;
+}
+
+
+.container{  /* stack the iPhones under each other when display size gets smaller*/
+    width:90%;
+    min-height:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 5%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    align-items:flex-start;
+
+}
+
+
+.palette {  /*palette colours */
+    text-align: center;
+}
+.palette img {
+
+   max-width:100%;
+}
+
+.menubar {  /*palette colours */
+    text-align: center;
+}
+.menubar img {
+       max-width:100%;
+}
+
+.journeymap {  /*user journey map  */
+    text-align: center;
+}
+.journeymap img {
+       max-width:100%;
+}
+
+
+
+.iPhone > img {    /*iPhone mock up position */
+    margin-left: calc(50% - 125px);
+}
+
+.iPhone > p {  /*mock u text position */
+    margin-left: calc(50% - 125px);
+    width: 250px;
+
+}
+
+.description{
+    text-align: left;
+}
+
+
+
+.description > img{  
+    margin-left: 
+
+
+}
+
+
+@media print {      /* nav bar size change, will turn into a drop down menu */
+ body { font-size: 10pt }
+}
+@media screen {
+ body { font-size: 13px } 
+}
+@media handheld {
+ body { font-size: 10px }
+}
+@media screen, print {
+ body { line-height: 1.2 }
+}
+
+nav select {
+ display: none;
+}
+
+@media (max-width: 960px) {
+ nav ul { display: none; }
+ nav select { display: inline-block; }
+}
+
+
+/* When the screen is less than 1000px wide, 
+text, headers, logo, slogen shrinks, main iPhone disappears*/
+@media (max-width:1000px){
+
+#logo{
+    width:200px;
+    margin-left:10;
+     
+}
+
+.container{
+    width:100%;
+    margin:0;
+    flex-wrap: wrap;
+    min-height: 0;
+}
+    #img{
+    display: none;
+}
+}
+
+/* When the screen is less than 800px wide, 
+text, headers, logo, slogen shrinks*/
+@media screen and (max-width: 700px) {
+    #logo{
+    width:100px;
+    margin-left:10; 
+}
+
+    #img{
+    display: none;
+
+}
+    .slogen{
+        font-size:20px; 
+    }
+     
+     .description{
+        font-size:10px; 
+    }
+
+    .iPhone{
+        font-size:10px; 
+    }
+
+    .journeymap
+    {
+       font-size:10px;     
+    }
+
+.menubar
+    {
+       font-size:10px;     
+    }
+.palette
+    {
+       font-size:10px;     
+    }
+
+   
+
+/* When the screen is less than 480px wide, 
+text, headers, logo, slogen shrinks*/
+@media screen and (max-width: 480px) {
+    #logo{
+    width:75px;
+    margin-left:10; 
+}
+
+    #img{
+    display: none;
+}
+     .slogen{
+        font-size:10px; 
+    }
+    .description{
+        font-size:8px; 
+    }
+     .iPhone{
+        font-size:7px; 
+    }
+
+    .journeymap
+    {
+       font-size:7px;     
+    }
+
+.menubar
+    {
+       font-size:7px;     
+    }
+.palette
+    {
+       font-size:7px;     
+    }
+     
+}
+
