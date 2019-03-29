@@ -22,33 +22,6 @@ p.thicker { /*feature headers*/
   font-family: simplicity;
 
 }
-.navbar{   /*navigation bar*/
-  list-style-type: none;
-  position: fixed;
-  margin: -25px;
-  padding: 10px;
-  font-size: 1.8em;
-   color: white;
-  word-spacing: 0px;
-  font-family: simplicity;
-
-}
-
-li {
-     list-style-type: none;
-  float: left;
-
-  
-}
-
-li a {
-     list-style-type: none;
-     text-decoration: none;
-  display: inline;
-  padding: 20px;
-}
-}
-
 
 
 h1{
@@ -143,29 +116,6 @@ p { /*text*/
     margin-left: 
 
 
-}
-
-
-@media print {      /* nav bar size change, will turn into a drop down menu */
- body { font-size: 10pt }
-}
-@media screen {
- body { font-size: 13px } 
-}
-@media handheld {
- body { font-size: 10px }
-}
-@media screen, print {
- body { line-height: 1.2 }
-}
-
-nav select {
- display: none;
-}
-
-@media (max-width: 960px) {
- nav ul { display: none; }
- nav select { display: inline-block; }
 }
 
 
